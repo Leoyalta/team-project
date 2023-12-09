@@ -3,21 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- modern-normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@900&family=Poppins:wght@400;700&family=Reem+Kufi&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>World.Net</title>
   </head>
   <body>
-    <header>
-      <a href="./index.html">World.Net</a>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="#advantages">About</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="./tariffs.html">Tarrifs</a></li>
-          <li><a href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address><a href="tel:88006549732">8 (800) 654-97-32</a></address>
+    <header class="header">
+      <div class="container header-container">
+        <a class="header-logo" href="./index.html">World.Net</a>
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-list-item"><a class="header-list-link" href="./index.html">Home</a></li>
+            <li class="header-list-item"><a class="header-list-link" href="#advantages">About</a></li>
+            <li class="header-list-item"><a class="header-list-link" href="#reviews">Reviews</a></li>
+            <li class="header-list-item"><a class="header-list-link" href="./tariffs.html">Tarrifs</a></li>
+            <li class="header-list-item"><a class="header-list-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="header-address"><a class="header-address-link" href="tel:88006549732">8 (800) 654-97-32</a></address>
+      </div>
     </header>
     <main>
       <!-- Section1 -->
@@ -102,23 +121,31 @@
       <!-- Section 4 -->
       <section id="reviews">
         <p>Customer Feedback</p>
-        <h2>What Our Customer
-        Say About Us</h2>
+        <h2>What Our Customer Say About Us</h2>
         <ul>
           <li>
-            <img src="./images/feedback.svg" alt="feedback">
-            <h3>Name Here </h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla donec</p>
+            <img src="./images/feedback.svg" alt="feedback" />
+            <h3>Name Here</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
+              odio arcu id praesent vitae. Facilisis vitae fringilla donec
+            </p>
           </li>
           <li>
-            <img src="./images/feedback.svg" alt="feedback">
-            <h3>Name Here </h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla donec</p>
+            <img src="./images/feedback.svg" alt="feedback" />
+            <h3>Name Here</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
+              odio arcu id praesent vitae. Facilisis vitae fringilla donec
+            </p>
           </li>
           <li>
-            <img src="./images/feedback.svg" alt="feedback">
-            <h3>Name Here </h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt odio arcu id praesent vitae. Facilisis vitae fringilla donec</p>
+            <img src="./images/feedback.svg" alt="feedback" />
+            <h3>Name Here</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nisi ullamcorper tincidunt
+              odio arcu id praesent vitae. Facilisis vitae fringilla donec
+            </p>
           </li>
         </ul>
       </section>
@@ -127,7 +154,12 @@
         <h2>Tariffis</h2>
         <ul>
           <li>
-            <img src="./images/standart.svg" alt="Standart" width="248" height="228">
+            <img
+              src="./images/standart.svg"
+              alt="Standart"
+              width="248"
+              height="228"
+            />
             <h3>Standart</h3>
             <p>$20/month</p>
             <p>The connection is always stable</p>
@@ -135,7 +167,12 @@
             <button type="button">Make a request</button>
           </li>
           <li>
-            <img src="./images/smart.svg" alt="Smart" width="248" height="228">
+            <img
+              src="./images/smart.svg"
+              alt="Smart"
+              width="248"
+              height="228"
+            />
             <h3>Smart</h3>
             <p>$30/month</p>
             <p>Service without weekends</p>
@@ -143,7 +180,12 @@
             <button type="button">Make a request</button>
           </li>
           <li>
-            <img src="./images/prime.svg" alt="Prime" width="248" height="228">
+            <img
+              src="./images/prime.svg"
+              alt="Prime"
+              width="248"
+              height="228"
+            />
             <h3>Prime</h3>
             <p>$40/month</p>
             <p>New modern fiber optic network</p>
@@ -152,15 +194,33 @@
           </li>
         </ul>
       </section>
-      <!-- section 6 --> 
+      <!-- section 6 -->
       <section>
         <h2>Leave a request and our manager will contact you shortly</h2>
-        <p>You will have the opportunity to discuss details and ask clarifying questions</p>
+        <p>
+          You will have the opportunity to discuss details and ask clarifying
+          questions
+        </p>
         <form action="index.html">
-          <input type="number" name="user-phone" id="user-phone" placeholder="Phone number">
-          <input type="text" name="user-name" id="user-name" placeholder="Name">
+          <input
+            type="number"
+            name="user-phone"
+            id="user-phone"
+            placeholder="Phone number"
+          />
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Name"
+          />
           <button type="button">Order calculation</button>
-          <input type="checkbox" name="accept-terms" id="accept-terms" value="true">
+          <input
+            type="checkbox"
+            name="accept-terms"
+            id="accept-terms"
+            value="true"
+          />
           <label for="accept-terms">
             By clicking on the button, you agree to the
             <a href="#">terms of processing personal data</a>
@@ -170,9 +230,30 @@
       <footer>
         <a href="./index.html">World.Net</a>
         <ul>
-          <li><img src="./images/instagram.svg" alt="instagram" width="40" height="40"></li>
-          <li><img src="./images/facebook.svg" alt="facebook" width="40" height="40"></li>
-          <li><img src="./images/whatsapp.svg" alt="whatsapp" width="40" height="40"></li>
+          <li>
+            <img
+              src="./images/instagram.svg"
+              alt="instagram"
+              width="40"
+              height="40"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/facebook.svg"
+              alt="facebook"
+              width="40"
+              height="40"
+            />
+          </li>
+          <li>
+            <img
+              src="./images/whatsapp.svg"
+              alt="whatsapp"
+              width="40"
+              height="40"
+            />
+          </li>
         </ul>
         <address>
           <a href="tel:88006549732">8 (800) 654-97-32</a>

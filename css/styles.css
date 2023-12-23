@@ -133,3 +133,168 @@ border: none;
 }
 .hero-img {
 }
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.56);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.modal {
+  width: 650px;
+  min-height: 854px;
+  padding: 76px 50px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  background: #FFF;
+}
+
+.close-btn {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  background-color: #006333;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-subtitle {
+  color: #000;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 19px;
+}
+
+.modal-subtitle::before {
+  width: 143px;
+  height: 2px;
+  background: #D8D8D8;
+  content: "";
+  display: block;
+}
+
+.modal-title {
+  color: #006333;
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 31px;
+}
+
+.modal-title-part {
+  color: #000;
+}
+
+.modal-text {
+  color: #006333;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 23px;
+}
+
+.modal-label {
+  margin-bottom: 23px;
+  display: block;
+}
+
+.modal-input {
+  width: 100%;
+  height: 60px;
+  padding-left: 21px;
+
+  border-radius: 5px;
+  border: 1px solid #CACACA;
+  background: transparent;
+
+  outline: transparent;
+}
+
+.modal-input:focus {
+  border-color: #006333;
+}
+
+.modal-input::placeholder {
+  color: #000;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+}
+
+.modal-field {
+  width: 100%;
+  height: 149px;
+  padding: 22px;
+
+  border-radius: 5px;
+  border: 1px solid #CACACA;
+  background: transparent;
+  outline: transparent;
+
+  resize: none;
+}
+
+.modal-field:focus {
+  border-color: #006333;
+}
+
+.modal-field::placeholder {
+  color: #000;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+}
+
+.modal-field-label {
+  margin-bottom: 33px;
+}
+
+.modal-btn {
+  min-width: 181px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  background-color: #2C7250;
+  border-radius: 5px;
+
+  color: #FFF;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}

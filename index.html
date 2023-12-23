@@ -48,7 +48,7 @@
               We work only in small towns. Thanks to this, we maintain quality and
               we will not spray
             </p>
-            <button type="button" class="hero-button">Submit your application</button>
+            <button type="button" class="hero-button" data-modal-open>Submit your application</button>
           </div>
           <img class="hero-img"
             src="./images/hero-img.svg"
@@ -264,9 +264,9 @@
           <a href="tel:88006549732">8 (800) 654-97-32</a>
         </address>
       </footer>
-      <div class="backdrop is-open">
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button type="button" class="close-btn">X</button>
+          <button type="button" class="close-btn" data-modal-close>X</button>
           <p class="modal-subtitle">Contact Us</p>
           <p class="modal-title"><span class="modal-title-part">Contact</span> Us & We Can
           Work Together</p>
@@ -286,5 +286,6 @@
           </form>
         </div>
       </div>
+      <script src="./js/modal.js"></script>
   </body>
 </html>

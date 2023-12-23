@@ -199,37 +199,46 @@
         </ul>
       </section>
       <!-- section 6 -->
-      <section>
-        <h2>Leave a request and our manager will contact you shortly</h2>
-        <p>
+      <section class="request">
+        <div class="container">
+        <h2 class="request-title">Leave a request and our manager will contact you shortly</h2>
+        <p class="request-text">
           You will have the opportunity to discuss details and ask clarifying
           questions
         </p>
-        <form action="index.html">
-          <input
-            type="number"
+        <form class="request-form">
+          <div class="form-box"> 
+          <input class="request-input"
+            type="tel"
             name="user-phone"
             id="user-phone"
             placeholder="Phone number"
           />
-          <input
+          <input class="request-input"
             type="text"
             name="user-name"
             id="user-name"
             placeholder="Name"
           />
-          <button type="button">Order calculation</button>
-          <input
+          <button class="reques-btn" type="button">Order calculation</button>
+        </div>
+          <div class="reques-box">
+            <input class="check-box visually-hidden" 
             type="checkbox"
             name="accept-terms"
             id="accept-terms"
             value="true"
           />
-          <label for="accept-terms">
+          <label  class="accept-terms" for="accept-terms">
+          <span class="custom-checkbox"> <svg class="" width="7" height="5">
+            <use href="./images/icons.svg#icon-check"></use>
+          </svg></span>
             By clicking on the button, you agree to the
-            <a href="#">terms of processing personal data</a>
+            <a class="check-box-link" href="#">terms of processing personal data</a>
           </label>
+        </div>
         </form>
+      </div>
       </section>
       </main>
       <footer>
@@ -263,6 +272,7 @@
         <address>
           <a href="tel:88006549732">8 (800) 654-97-32</a>
         </address>
+        
       </footer>
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">

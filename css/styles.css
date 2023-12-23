@@ -306,3 +306,120 @@ border: none;
   font-size: 16px;
   letter-spacing: 0.03em;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.request {
+  background: #FAFAFA;
+  padding: 175px 0;
+
+}
+.request-title {
+max-width: 707px;
+color:  #2E363E;
+text-align: center;
+font-size: 36px;
+font-weight: 700;
+line-height: 1.3; 
+margin-bottom: 26px;
+margin-left: auto;
+margin-right: auto;
+}
+.request-text {
+  color: #2E363E;
+text-align: center;
+font-size: 21px;
+line-height: 1.43; 
+letter-spacing: -0.009em;
+margin-bottom: 50px;
+}
+.request-form {
+}
+.request-input {
+  border-radius: 5px;
+border: 1px solid rgba(0, 0, 0, 0.32);
+background: transparent;
+width: 280px;
+height: 70px;
+padding-left: 30px ;
+outline: transparent;
+
+}
+.request-input:focus {
+  border-color: #006333;
+}
+.request-input::placeholder {
+  color: #BFBFBF;
+font-size: 17px;
+line-height: 1.1; 
+}
+.reques-btn {
+  border-radius: 5px;
+background: #2C7250;
+width: 280px;
+height: 70px;
+color:#FFF;
+text-align: center;
+font-size: 18px;
+font-weight: 600;
+line-height: 1.1;
+border: none;
+cursor: pointer;
+}
+.check-box {
+}
+.visually-hidden {
+}
+.accept-terms {
+  display: flex;
+  align-items: center;
+  color: #7E868E;
+font-size: 11px;
+font-weight: 400;
+line-height: 1.3;
+}
+.custom-checkbox {
+  border-radius: 2px;
+border: 1px solid #000;
+background: rgba(95, 10, 97, 0.00);
+width: 12px;
+height: 12px;
+fill: transparent;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
+margin-right: 7px;
+}
+.check-box:checked + .accept-terms > .custom-checkbox {
+  border: none;
+  background-color: #006333;
+  fill: #FFF;
+}
+.check-box-link {
+  color: #2C7250;
+font-size: 11px;
+font-weight: 400;
+line-height: 1.3;
+text-decoration-line: underline;
+
+}
+.form-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+.reques-box {
+  display: flex;
+  justify-content: center;
+}
